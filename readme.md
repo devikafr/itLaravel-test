@@ -38,3 +38,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+Agency App Laravel
+You can authentificate as user.There is no admin authentification added.
+Authenification information: Name:Devika Email:devika25@hotmail.com Password:123456
+
+The application is an Antique store. The users can view antiques and send a message to Admin.
+It has a template and css added also laravel default layout  added to dsplay content.
+
+Special thanks to Morgan Crroyer and and ITAkademy.
