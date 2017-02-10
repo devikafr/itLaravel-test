@@ -34,8 +34,10 @@ CREATE TABLE `contacts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `content` varchar(45) DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,6 +46,7 @@ CREATE TABLE `contacts` (
 
 LOCK TABLES `contacts` WRITE;
 /*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
+INSERT INTO `contacts` VALUES (1,'Devika','not bad!!','2017-02-10 11:01:27','2017-02-10 11:01:27');
 /*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -82,8 +85,9 @@ CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `descreption` varchar(45) DEFAULT NULL,
+  `img` tinytext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,7 +96,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Mirror','Gold Framed, product year unknown, perfect co'),(2,'Clock','Gold color, product year:1889, perfect condit'),(3,'Chair','Arm Chair, Cushioned with velvet material, So');
+INSERT INTO `products` VALUES (1,'Mirror','Gold Framed, product year unknown, perfect co','img5.jpeg'),(2,'Clock','Gold color, product year:1889, perfect condit','img1.jpeg'),(3,'Chair','Arm Chair, Cushioned with velvet material, So','img6.jpeg'),(4,'Chandelier','Crystal , good condition','img8.jpeg'),(5,'Serving Set','Silver, perfect condition','img9.jpeg'),(6,'table','Wooden decorated, perfect condition','img4.jpeg');
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -134,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-09 15:56:41
+-- Dump completed on 2017-02-10 11:14:11

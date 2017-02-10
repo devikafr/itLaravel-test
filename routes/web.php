@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index');
 Route::get('/product', 'ProductController@index');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@insertOne');
+Route::get('/logout', 'Auth\LoginController@logout');

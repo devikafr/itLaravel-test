@@ -19,6 +19,6 @@ class ContactController extends Controller
     $contact->content = $request->content;
     $contact->save();
 
-    return redirect('home');
+    return redirect('/product');
   }
 }

@@ -3,7 +3,12 @@ header ul{
   display: flex;
   justify-content: space-around;
 }
+body{
+  padding: 20px;
+  background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png") bottom center no-repeat,
+   url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png") repeat;
 
+}
 /*.navbar-brand{
   position: absolute;
   padding top:25px;
@@ -49,15 +54,13 @@ h2{
 }
 .product_table img {
   width: 100%;
+
 }
 .product_table .image_name {
   text-align: center;
   font-weight: bold;
   padding: 10px;
 }
-.product_table .product_price {
-  background-color:rgba(140, 196, 204, 0.5);
-  text-align: center;
-  width: 60px;
-  height: 48px;
-}
+img{
+  /*border: 1px solid black;*/
+  }
