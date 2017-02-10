@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\contact;
 
 class ProductController extends Controller
 {
@@ -15,6 +16,5 @@ class ProductController extends Controller
   {
     $products = Product::all();
     return view('product', ['products' => $products]);
-
   }
 }

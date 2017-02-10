@@ -41,6 +41,7 @@
 
                     @if(Auth::check())
                     <a href="{{ url('/product') }}">Products</a>
+                    <a href="{{ url('/contact') }}">Contact</a>
                     @endif
 
                 </div>
