@@ -37,7 +37,7 @@ CREATE TABLE `contacts` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,7 +46,7 @@ CREATE TABLE `contacts` (
 
 LOCK TABLES `contacts` WRITE;
 /*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
-INSERT INTO `contacts` VALUES (1,'Devika','not bad!!','2017-02-10 11:01:27','2017-02-10 11:01:27');
+INSERT INTO `contacts` VALUES (1,'Devika','not bad!!','2017-02-10 11:01:27','2017-02-10 11:01:27'),(2,'Morgan','This is not very good Devika','2017-02-10 14:29:50','2017-02-10 14:29:50'),(3,'Dinh','You need to learn more Devika','2017-02-10 14:32:06','2017-02-10 14:32:06'),(4,'Amira','Devika Background is not that cool!','2017-02-10 14:33:11','2017-02-10 14:33:11');
 /*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -125,7 +125,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Devika','devika25@hotmail.com','$2y$10$lcKirWf3w4.LXqJSRqin2Oyw/crcWDKMcpIKLWkoNqHCmb470LOn2','G28yUz7G9hwdrAc1I1Z23JTD5TmlDpXzg6wHTMBlEt1MPpic7DNaUD9KwN0U','2017-02-09 11:18:10','2017-02-09 11:18:10');
+INSERT INTO `users` VALUES (1,'Devika','devika25@hotmail.com','$2y$10$lcKirWf3w4.LXqJSRqin2Oyw/crcWDKMcpIKLWkoNqHCmb470LOn2','G9b8oT1rj4xfGgmf9SxzKyMsQ8MtT8MZoJZyubI4U6hoMaxqARM8eKWKa0lN','2017-02-09 11:18:10','2017-02-09 11:18:10');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -138,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-10 11:14:11
+-- Dump completed on 2017-02-10 15:12:40
